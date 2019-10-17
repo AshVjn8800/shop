@@ -1,0 +1,56 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<app-header></app-header>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+	<div class="registration mx-auto d-block w-100">
+		<div class="page-header text-center">
+			<h1>Sign up</h1>
+		</div>
+		
+		<form id="member-registration" action="/astroidnew/index.php/pages/register?task=registration.register" method="post" class="form-validate form-horizontal well" enctype="multipart/form-data">
+			<fieldset>
+				<legend>User Registration</legend>
+				<div class="form-group">
+					<label for="exampleInputPassword1">Name *</label>
+					<input type="text" class="form-control" id="exampleInputPassword1" name="name" [(ngModel)]="user.name">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputPassword1">Username *</label>
+					<input type="text" class="form-control" id="exampleInputPassword1" name="Username" [(ngModel)]="user.username">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputPassword1">Password *</label>
+					<input type="password" class="form-control" id="exampleInputPassword1" name="password" [(ngModel)]="user.password">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputPassword1">Confirm Password *</label>
+					<input type="password" class="form-control" id="exampleInputPassword1" name="conpassword" [(ngModel)]="user.conpassword">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputEmail1">Email Address *</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" name="email" [(ngModel)]="user.email">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputEmail1">phone number *</label>
+					<input type="number" class="form-control" id="exampleInputEmail1" name="phone" [(ngModel)]="user.phone">
+				</div>
+				<div class="d-flex justify-content-between align-items-center">
+					<div class="form-group d-flex justify-content-start">
+						<button type="button" (click)="register()" class="btn btn-primary">Submit</button>
+					</div>
+					<div class="form-check form-group d-flex justify-content-end">
+						<a href="#">Sign in instead</a>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+</div>
+<app-footer></app-footer>
