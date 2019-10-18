@@ -5,6 +5,7 @@ import { NextComponent } from './components/next/next.component';
 import { RegisterComponent } from './components/register/register.component';
 import { CartComponent } from './components/cart/cart.component';
 import { ShopComponent } from './components/shop/shop.component';
+import { BookComponent } from './components/book/book.component';
 
 const routes: Routes = [
   {path: '', component : HomeComponent},
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path: 'next', component: NextComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'shop', component: ShopComponent},
-  {path: 'cart', component: CartComponent}
+  {path: 'cart', component: CartComponent},
+  {path: 'book', component: BookComponent}
 
 
 ];

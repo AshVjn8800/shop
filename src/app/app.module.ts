@@ -13,6 +13,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CartComponent } from './components/cart/cart.component';
 import { ShopComponent } from './components/shop/shop.component';
+import { BookComponent } from './components/book/book.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ShopComponent } from './components/shop/shop.component';
     FooterComponent,
     RegisterComponent,
     CartComponent,
-    ShopComponent
+    ShopComponent,
+    BookComponent
 
   ],
   imports: [

@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TestService } from '../../test.service';
-import { RouterLink } from '@angular/router';
 import { APP_BASE_HREF } from '@angular/common';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -15,12 +14,12 @@ export class HomeComponent implements OnInit {
   };
 
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
   validate() {
-    console.log(this.user);
+    this.router.navigate(['/book']);
 
   }
 }
